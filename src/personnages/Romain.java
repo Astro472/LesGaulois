@@ -53,16 +53,17 @@ public class Romain {
 		switch (nbEquipements) {
 		case 2:
 			System.out.println("Le soldat "+nom+" est deja bien equipe !");
-		case 1:{
+			break;
+		case 1:
 			if (equipements[0]==piece) {
 				System.out.println("Le soldat "+nom+" possede deja un "+piece);
 			} else {
 				equiperAnn(piece);
 			}
-		}
-		case 0:{
+			break;
+		case 0:
 			equiperAnn(piece);
-		}
+			break;
 		}
 	}
 
@@ -70,7 +71,7 @@ public class Romain {
 		Romain minus = new Romain("Minus", 6);
 		minus.sEquiper(Equipement.CASQUE);
 		minus.sEquiper(Equipement.CASQUE);
-		//minus.sEquiper(Equipement.BOUCLIER);
-		//minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.BOUCLIER);
+		minus.sEquiper(Equipement.CASQUE);
 	}
 }
